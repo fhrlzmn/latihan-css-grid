@@ -1,0 +1,122 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+  text-align: center;
+}
+
+.container {
+  width: 1190px;
+  background-color: black;
+  height: 350px;
+  margin: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (1fr)[20];
+  -ms-grid-columns: (1fr)[68];
+      grid-template: repeat(20, 1fr)/repeat(68, 1fr);
+  gap: 5px;
+  padding: 5px;
+  color: white;
+  font-size: 1.7em;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 2px 5px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 2px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.container .key {
+  grid-column: auto / span 4;
+  grid-row: auto / span 4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: lightcoral;
+  border-radius: 10px;
+}
+
+.container .key.backspace {
+  grid-column: auto / span 8;
+}
+
+.container .key.tab {
+  grid-column: auto / span 6;
+}
+
+.container .key.slash {
+  grid-column: auto / span 6;
+}
+
+.container .key.capslock {
+  grid-column: auto / span 7;
+}
+
+.container .key.enter {
+  grid-column: auto / span 9;
+}
+
+.container .key.l-shift {
+  grid-column: auto / span 9;
+}
+
+.container .key.r-shift {
+  grid-column: auto / span 11;
+}
+
+.container .key.ctrl-part.space {
+  grid-column: auto / span 26;
+}
+
+.container .key.ctrl-part {
+  grid-column: auto / span 5;
+}
+
+.container .key.num-key {
+  background-color: white;
+  color: black;
+}
+
+.container .key.prim-key {
+  background-color: white;
+  color: black;
+}
+
+.container .key.left-side {
+  background-color: grey;
+  font-size: 19px;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  padding-left: 10px;
+}
+
+.container .key.right-side {
+  background-color: grey;
+  font-size: 19px;
+}
+
+.container .key.ctrl-part {
+  background-color: grey;
+  font-size: 19px;
+}
+
+.container .key.space {
+  background-color: grey;
+}
+
+.container .key.arrow-key {
+  background-color: crimson;
+}
+
+.container .key.nav-key {
+  font-size: 14px;
+}
+/*# sourceMappingURL=style.css.map */

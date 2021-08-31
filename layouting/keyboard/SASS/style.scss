@@ -1,0 +1,111 @@
+$keySize: 70px;
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+  text-align: center;
+}
+
+.container {
+  width: $keySize * 17;
+  background-color: black;
+  height: $keySize * 5;
+  margin: auto;
+  display: grid;
+  grid-template: repeat(5 * 4, 1fr) / repeat(17 * 4, 1fr);
+  gap: 5px;
+  padding: 5px;
+  color: white;
+  font-size: 1.7em;
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px 5px rgba($color: #000000, $alpha: 0.3);
+
+  .key {
+    grid-column: auto / span 4;
+    grid-row: auto / span 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightcoral;
+    border-radius: 10px;
+
+    &.backspace {
+      grid-column: auto / span 8;
+    }
+
+    &.tab {
+      grid-column: auto / span 6;
+    }
+
+    &.slash {
+      grid-column: auto / span 6;
+    }
+    &.capslock {
+      grid-column: auto / span 7;
+    }
+
+    &.enter {
+      grid-column: auto / span 9;
+    }
+
+    &.l-shift {
+      grid-column: auto / span 9;
+    }
+
+    &.r-shift {
+      grid-column: auto / span 11;
+    }
+
+    &.ctrl-part.space {
+      grid-column: auto / span 26;
+    }
+
+    &.ctrl-part {
+      grid-column: auto / span 5;
+    }
+
+    // Styling
+    &.num-key {
+      background-color: white;
+      color: black;
+    }
+
+    &.prim-key {
+      background-color: white;
+      color: black;
+    }
+
+    &.left-side {
+      background-color: grey;
+      font-size: 19px;
+      justify-content: left;
+      padding-left: 10px;
+    }
+
+    &.right-side {
+      background-color: grey;
+      font-size: 19px;
+    }
+
+    &.ctrl-part {
+      background-color: grey;
+      font-size: 19px;
+    }
+
+    &.space {
+      background-color: grey;
+    }
+
+    &.arrow-key {
+      background-color: crimson;
+    }
+
+    &.nav-key {
+      font-size: 14px;
+    }
+  }
+}
